@@ -1,0 +1,7 @@
+#Sun Feb 09 23:32:32 EET 2020
+base.0=/home/abuyaman/Desktop/sad app/IT/android/app/build/intermediates/transforms/dexMerger/release/0
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/home/abuyaman/Desktop/sad app/IT/android/app/build/intermediates/transforms/dexMerger/release/0

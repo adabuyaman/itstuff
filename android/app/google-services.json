@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "709577913289",
+    "firebase_url": "https://itstuff-bc5ea.firebaseio.com",
+    "project_id": "itstuff-bc5ea",
+    "storage_bucket": "itstuff-bc5ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709577913289:android:b5d1a6b07d7dae20eb6e18",
+        "android_client_info": {
+          "package_name": "com.it"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709577913289-56dari6v4nibfo5ukkod47v5srf5bb3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVuWQGuYlro6NQ3ZgSreywW7ahRFdAeYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709577913289-56dari6v4nibfo5ukkod47v5srf5bb3g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

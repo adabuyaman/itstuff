@@ -1,0 +1,588 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:@react-native-firebase_auth] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:@react-native-firebase_firestore] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/firestore/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:@react-native-firebase_app] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.multidex:multidex:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/a50f8a26be76d725827441ee08c24ea5/AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-svg] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:@react-native-community_art] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:@react-native-community_async-storage] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:@react-native-community_masked-view] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-gesture-handler] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.61.5] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/88e22db30b6518ab71e03b9d8d3d1541/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f15a97d4e2d254a1d5a667d376b2128d/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/614317848e0db62f23004ebed26df264/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/d60f5c6f6a5a591e53f04421ba33d6f0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/201c2e7c4425d54d63bc4b9370f57d45/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ac8bf71796ec7077598848bd8edad3e5/AndroidManifest.xml:17:1-24:12
+MERGED from [org.webkit:android-jsc:r245459] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/6bca2a80521ee0c4e67ac51e798eb4bf/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/524a32d8f8c0696c064a3b0832e6375f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9796923ac5df94e7c7c4330ec905890d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/a9c58ef043c284ef41806f8bc9e12d08/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/85df141789d3a59cbcc2e5919fe447fb/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/631bd9720553772a3e31dd41ecc60108/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9df70abd379952ca0114aa918cc73e8a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/c826e89de6576fda0794d1038065c5b9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7a357ae3d4e9fd82f900ad16074e5cb5/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:2:1-26:12
+MERGED from [io.grpc:grpc-android:1.21.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7bfd92b0c63db1aaccd2f9adba299b5c/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/84f910738d1d729d41cbffeaf7453f4f/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9742f2b0b09484fe05ce992c57773a34/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1f89de2641755df566eece7eca41f2ce/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8b477a6e27a7d4e56169b3b471724710/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/fb3f7827b59850e5d222206deb5fc439/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9711a822259ff892a553024678ccd3dd/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-core:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1a17bed69f8b2c2ee70ef4e62c51bc97/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/61856d2580f382faa70d15c2adde431b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/563eae2fb9afa15a2b3b89e052201f4e/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7ccdaa63d2a0eff3ae5554051d1c4d25/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ac11db204ae36449633f43dff104aa62/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/0c37fdc58d6066552ec4fffab6c28cab/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1da2498fa87577a60964fb3a44c22977/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/cc5a2fdd5d820e24c3b21ec6ff6495ff/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f1ff1cb3888b99e4a453ef2766671fb7/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/b3b7f192a7b3cb157e33da34940524d8/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/64645890fc49424845283384aede0e21/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/46eccbe84acd66669aff508db65bc01a/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/b31f64671c65504ff2dc599458ef68c9/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9cd69f73475ca2449575f31f13f8457e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/fd8de275b8e416b10e46655477d57410/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/38b2d3c81a6e0a58e2a5a218b20ab3d1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/d66c96070c4ab8a37a00ee16225a97ab/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/6c10af5eaece155300c085c9504ab96a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/08ef01bbb00bdb63ebd067b263623c27/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/da9d2bd31c69ee8e4065b90aac5e75e8/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/153c1e5cd3c59b9f57025bccb025fc07/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/24d75ee22b44bf1df81b74417f389308/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/c8ea5a484cd4d1b8ab76e6f724d9e177/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/42929e28d0f10994ba952da5e48e898a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/60adcfc98c2362cf2e9291de1f06b104/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/5c49a66709dbb0a1392ce6a7c8da557c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/e68d9c7c883a7a2c32714d8d55acce88/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/d2144f47b8a102a189e33bbcc6fc543d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/80066fa990c70bc829f97f0797aeaa7d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1bad29130dcaaf3bd8a860880b1964fc/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/426683b6b99ccc49204cbb80921f506b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/0ee294650e140a2b6067851c90d3b304/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/02001e3de4f23b7d192f89fa34ac7bc7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/fd0185222b44c6c2919bd1d3a74aec09/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/b65f01d3378f159f3e58ddbb2b5aa9ea/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/61d7511cd68c06cb755d3d55276d82c1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2a493a73e377a8a146c3fcd19e6e7790/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1a9c5fb72f2273e8a4a759beea0a390b/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/a11a8e74c1fe1f66e0627ed9730888ba/AndroidManifest.xml:2:1-11:12
+INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:2:3-19
+		INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:2:3-19
+		INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:@react-native-firebase_auth] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:@react-native-firebase_auth] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:14:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1da2498fa87577a60964fb3a44c22977/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1da2498fa87577a60964fb3a44c22977/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from [com.facebook.react:react-native:0.61.5] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/88e22db30b6518ab71e03b9d8d3d1541/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/88e22db30b6518ab71e03b9d8d3d1541/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f15a97d4e2d254a1d5a667d376b2128d/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f15a97d4e2d254a1d5a667d376b2128d/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7a357ae3d4e9fd82f900ad16074e5cb5/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7a357ae3d4e9fd82f900ad16074e5cb5/AndroidManifest.xml:11:5-20
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9711a822259ff892a553024678ccd3dd/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9711a822259ff892a553024678ccd3dd/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-core:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1a17bed69f8b2c2ee70ef4e62c51bc97/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1a17bed69f8b2c2ee70ef4e62c51bc97/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/61856d2580f382faa70d15c2adde431b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/61856d2580f382faa70d15c2adde431b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/563eae2fb9afa15a2b3b89e052201f4e/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/563eae2fb9afa15a2b3b89e052201f4e/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7ccdaa63d2a0eff3ae5554051d1c4d25/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7ccdaa63d2a0eff3ae5554051d1c4d25/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ac11db204ae36449633f43dff104aa62/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ac11db204ae36449633f43dff104aa62/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/0c37fdc58d6066552ec4fffab6c28cab/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/0c37fdc58d6066552ec4fffab6c28cab/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/cc5a2fdd5d820e24c3b21ec6ff6495ff/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/cc5a2fdd5d820e24c3b21ec6ff6495ff/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f1ff1cb3888b99e4a453ef2766671fb7/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f1ff1cb3888b99e4a453ef2766671fb7/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/b3b7f192a7b3cb157e33da34940524d8/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/b3b7f192a7b3cb157e33da34940524d8/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/64645890fc49424845283384aede0e21/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/64645890fc49424845283384aede0e21/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/46eccbe84acd66669aff508db65bc01a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/46eccbe84acd66669aff508db65bc01a/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/c8ea5a484cd4d1b8ab76e6f724d9e177/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/c8ea5a484cd4d1b8ab76e6f724d9e177/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/e68d9c7c883a7a2c32714d8d55acce88/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/e68d9c7c883a7a2c32714d8d55acce88/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/c8ea5a484cd4d1b8ab76e6f724d9e177/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:8:7-39
+	tools:ignore
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:10:7-52
+	tools:targetApi
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:9:7-41
+	android:allowBackup
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:usesCleartextTraffic
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:7:7-38
+activity#com.it.MainActivity
+ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:23:7-84
+	android:name
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml
+MERGED from [:@react-native-firebase_auth] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-firebase_auth] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-firebase_firestore] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/firestore/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-firebase_firestore] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/firestore/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-firebase_app] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-firebase_app] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.multidex:multidex:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/a50f8a26be76d725827441ee08c24ea5/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/a50f8a26be76d725827441ee08c24ea5/AndroidManifest.xml:20:5-43
+MERGED from [:react-native-svg] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-community_art] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_art] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-community/art/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_async-storage] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_async-storage] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_masked-view] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_masked-view] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /home/abuyaman/Desktop/sad app/IT/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/88e22db30b6518ab71e03b9d8d3d1541/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/88e22db30b6518ab71e03b9d8d3d1541/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f15a97d4e2d254a1d5a667d376b2128d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f15a97d4e2d254a1d5a667d376b2128d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/614317848e0db62f23004ebed26df264/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/614317848e0db62f23004ebed26df264/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/d60f5c6f6a5a591e53f04421ba33d6f0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/d60f5c6f6a5a591e53f04421ba33d6f0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/201c2e7c4425d54d63bc4b9370f57d45/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/201c2e7c4425d54d63bc4b9370f57d45/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ac8bf71796ec7077598848bd8edad3e5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ac8bf71796ec7077598848bd8edad3e5/AndroidManifest.xml:20:5-22:41
+MERGED from [org.webkit:android-jsc:r245459] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/6bca2a80521ee0c4e67ac51e798eb4bf/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/6bca2a80521ee0c4e67ac51e798eb4bf/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/524a32d8f8c0696c064a3b0832e6375f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/524a32d8f8c0696c064a3b0832e6375f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9796923ac5df94e7c7c4330ec905890d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9796923ac5df94e7c7c4330ec905890d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/a9c58ef043c284ef41806f8bc9e12d08/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/a9c58ef043c284ef41806f8bc9e12d08/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/85df141789d3a59cbcc2e5919fe447fb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/85df141789d3a59cbcc2e5919fe447fb/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/631bd9720553772a3e31dd41ecc60108/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/631bd9720553772a3e31dd41ecc60108/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9df70abd379952ca0114aa918cc73e8a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9df70abd379952ca0114aa918cc73e8a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/c826e89de6576fda0794d1038065c5b9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/c826e89de6576fda0794d1038065c5b9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7a357ae3d4e9fd82f900ad16074e5cb5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7a357ae3d4e9fd82f900ad16074e5cb5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.21.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7bfd92b0c63db1aaccd2f9adba299b5c/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.21.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7bfd92b0c63db1aaccd2f9adba299b5c/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/84f910738d1d729d41cbffeaf7453f4f/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/84f910738d1d729d41cbffeaf7453f4f/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9742f2b0b09484fe05ce992c57773a34/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9742f2b0b09484fe05ce992c57773a34/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1f89de2641755df566eece7eca41f2ce/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1f89de2641755df566eece7eca41f2ce/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8b477a6e27a7d4e56169b3b471724710/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8b477a6e27a7d4e56169b3b471724710/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/fb3f7827b59850e5d222206deb5fc439/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/fb3f7827b59850e5d222206deb5fc439/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9711a822259ff892a553024678ccd3dd/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9711a822259ff892a553024678ccd3dd/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1a17bed69f8b2c2ee70ef4e62c51bc97/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1a17bed69f8b2c2ee70ef4e62c51bc97/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/61856d2580f382faa70d15c2adde431b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/61856d2580f382faa70d15c2adde431b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/563eae2fb9afa15a2b3b89e052201f4e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/563eae2fb9afa15a2b3b89e052201f4e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7ccdaa63d2a0eff3ae5554051d1c4d25/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7ccdaa63d2a0eff3ae5554051d1c4d25/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ac11db204ae36449633f43dff104aa62/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ac11db204ae36449633f43dff104aa62/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/0c37fdc58d6066552ec4fffab6c28cab/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/0c37fdc58d6066552ec4fffab6c28cab/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1da2498fa87577a60964fb3a44c22977/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1da2498fa87577a60964fb3a44c22977/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/cc5a2fdd5d820e24c3b21ec6ff6495ff/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/cc5a2fdd5d820e24c3b21ec6ff6495ff/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f1ff1cb3888b99e4a453ef2766671fb7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f1ff1cb3888b99e4a453ef2766671fb7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/b3b7f192a7b3cb157e33da34940524d8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/b3b7f192a7b3cb157e33da34940524d8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/64645890fc49424845283384aede0e21/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/64645890fc49424845283384aede0e21/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/46eccbe84acd66669aff508db65bc01a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/46eccbe84acd66669aff508db65bc01a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/b31f64671c65504ff2dc599458ef68c9/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/b31f64671c65504ff2dc599458ef68c9/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9cd69f73475ca2449575f31f13f8457e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/9cd69f73475ca2449575f31f13f8457e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/fd8de275b8e416b10e46655477d57410/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/fd8de275b8e416b10e46655477d57410/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/38b2d3c81a6e0a58e2a5a218b20ab3d1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/38b2d3c81a6e0a58e2a5a218b20ab3d1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/d66c96070c4ab8a37a00ee16225a97ab/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/d66c96070c4ab8a37a00ee16225a97ab/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/6c10af5eaece155300c085c9504ab96a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/6c10af5eaece155300c085c9504ab96a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/08ef01bbb00bdb63ebd067b263623c27/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/08ef01bbb00bdb63ebd067b263623c27/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/da9d2bd31c69ee8e4065b90aac5e75e8/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/da9d2bd31c69ee8e4065b90aac5e75e8/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/153c1e5cd3c59b9f57025bccb025fc07/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/153c1e5cd3c59b9f57025bccb025fc07/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/24d75ee22b44bf1df81b74417f389308/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/24d75ee22b44bf1df81b74417f389308/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/c8ea5a484cd4d1b8ab76e6f724d9e177/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/c8ea5a484cd4d1b8ab76e6f724d9e177/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/42929e28d0f10994ba952da5e48e898a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/42929e28d0f10994ba952da5e48e898a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/60adcfc98c2362cf2e9291de1f06b104/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/60adcfc98c2362cf2e9291de1f06b104/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/5c49a66709dbb0a1392ce6a7c8da557c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/5c49a66709dbb0a1392ce6a7c8da557c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/e68d9c7c883a7a2c32714d8d55acce88/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/e68d9c7c883a7a2c32714d8d55acce88/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/d2144f47b8a102a189e33bbcc6fc543d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/d2144f47b8a102a189e33bbcc6fc543d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/80066fa990c70bc829f97f0797aeaa7d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/80066fa990c70bc829f97f0797aeaa7d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:16.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1bad29130dcaaf3bd8a860880b1964fc/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1bad29130dcaaf3bd8a860880b1964fc/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/426683b6b99ccc49204cbb80921f506b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/426683b6b99ccc49204cbb80921f506b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/0ee294650e140a2b6067851c90d3b304/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/0ee294650e140a2b6067851c90d3b304/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/02001e3de4f23b7d192f89fa34ac7bc7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/02001e3de4f23b7d192f89fa34ac7bc7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/fd0185222b44c6c2919bd1d3a74aec09/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/fd0185222b44c6c2919bd1d3a74aec09/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/b65f01d3378f159f3e58ddbb2b5aa9ea/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/b65f01d3378f159f3e58ddbb2b5aa9ea/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/61d7511cd68c06cb755d3d55276d82c1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/61d7511cd68c06cb755d3d55276d82c1/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2a493a73e377a8a146c3fcd19e6e7790/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2a493a73e377a8a146c3fcd19e6e7790/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1a9c5fb72f2273e8a4a759beea0a390b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1a9c5fb72f2273e8a4a759beea0a390b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/a11a8e74c1fe1f66e0627ed9730888ba/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/a11a8e74c1fe1f66e0627ed9730888ba/AndroidManifest.xml:7:5-9:41
+INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /home/abuyaman/Desktop/sad app/IT/android/app/src/debug/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:@react-native-firebase_auth] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1da2498fa87577a60964fb3a44c22977/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1da2498fa87577a60964fb3a44c22977/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [:@react-native-firebase_auth] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:@react-native-firebase_auth] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:13:5-79
+MERGED from [io.grpc:grpc-android:1.21.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7bfd92b0c63db1aaccd2f9adba299b5c/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.21.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7bfd92b0c63db1aaccd2f9adba299b5c/AndroidManifest.xml:11:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1da2498fa87577a60964fb3a44c22977/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/1da2498fa87577a60964fb3a44c22977/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [:@react-native-firebase_auth] /home/abuyaman/Desktop/sad app/IT/node_modules/@react-native-firebase/auth/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-76
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:19:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:18:13-84
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:21.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/56f2da9785c15f0d79c4a2c1bd089050/AndroidManifest.xml:21:17-111
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:24:9-31:50
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:26:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:29:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:30:13-72
+	tools:replace
+		ADDED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:25:13-85
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:19.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/ab8475c4b20ec97e55e3320caa0a3510/AndroidManifest.xml:37:17-109
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/59e5b82a71508c700e13f69124821286/AndroidManifest.xml:31:17-139
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/f33a41115a9f96eeb15e39edd33749ae/AndroidManifest.xml:42:25-78
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7ccdaa63d2a0eff3ae5554051d1c4d25/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7ccdaa63d2a0eff3ae5554051d1c4d25/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7ccdaa63d2a0eff3ae5554051d1c4d25/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/7ccdaa63d2a0eff3ae5554051d1c4d25/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:26:9-30:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:29:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/8e9396c09b40e8fe46d58384c9ab5235/AndroidManifest.xml:27:13-77
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/34f6a5859fb035d9e32e40f7390c985c/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/2779f8855722e5c6f686a14ba8870f5a/AndroidManifest.xml:49:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/46eccbe84acd66669aff508db65bc01a/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/46eccbe84acd66669aff508db65bc01a/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/abuyaman/.gradle/caches/transforms-2/files-2.1/46eccbe84acd66669aff508db65bc01a/AndroidManifest.xml:24:13-58
