@@ -1,13 +1,11 @@
 import React from 'react';
-import { StyleSheet, View, Text, FlatList, ActivityIndicator, TextInput, RefreshControl } from 'react-native';
+import { StyleSheet, View, Text, FlatList, ActivityIndicator, TextInput, TouchableNativeFeedback, TouchableOpacity, Alert } from 'react-native';
 import common_styles, { style_objects } from '../../common/styles/common_styles';
 import SubjectItem from './components/subject_component';
 import { Icon } from 'react-native-elements';
 import { DrawerActions } from 'react-navigation-drawer';
-import { TouchableNativeFeedback, TouchableOpacity } from 'react-native-gesture-handler';
 import Swipeable from '../../common/components/swipable';
 import AsyncStorage from '@react-native-community/async-storage';
-import AwesomeAlert from 'react-native-awesome-alerts';
 
 class SubjectsList extends React.Component {
   constructor(props) {
@@ -19,8 +17,7 @@ class SubjectsList extends React.Component {
       search_string: '',
       userInfo: null,
       addBG: common_styles.colors.fail_color,
-      refreshing: false,
-      showAddAlert: false
+      loading: false,
     };
     this._get_all_subjects = this._get_all_subjects.bind(this);
   }
@@ -28,16 +25,15 @@ class SubjectsList extends React.Component {
   async componentDidMount() {
     await this._get_all_subjects();
     await this.get_user_data();
-    this.setState({ showAddAlert: true })
   }
 
   static navigationOptions = ({ navigation }) => {
     return {
       title: 'المواد الدراسية',
       headerRight: () => (
-        <TouchableNativeFeedback containerStyle={{ marginRight: 20 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-          <Icon name='menu' containerStyle={{}} size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
-        </TouchableNativeFeedback>
+        <TouchableOpacity onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+          <Icon name='menu' containerStyle={{paddingHorizontal:20,height:'100%',justifyContent:'center',alignItems:'center'}} size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
+        </TouchableOpacity>
       ),
     };
   };
@@ -49,7 +45,7 @@ class SubjectsList extends React.Component {
   }
 
   async _get_all_subjects() {
-    this.setState({ refreshing: true });
+    this.setState({ loading: true });
     try {
       await fetch('http://laitheyad1.pythonanywhere.com/subjects/')
         .then((response) => response.json())
@@ -60,7 +56,7 @@ class SubjectsList extends React.Component {
     catch (error) {
       console.log(error);
     }
-    this.setState({ refreshing: false });
+    this.setState({ loading: false });
   }
 
   local_search(text) {
@@ -73,6 +69,25 @@ class SubjectsList extends React.Component {
       }
     }
     this.setState({ searched_subjects: searched_subjects_list })
+  }
+
+  wannaAddAlert(subject) {
+    Alert.alert(
+      'إضافة مادة',
+      'إضافة ' + subject.name + ' ' + 'الى جدول المواد الدراسية الخاص بك؟',
+      [
+        {
+          text: 'لا',
+          onPress: () => console.log('Canceled'),
+          style: 'cancel',
+        },
+        {
+          text: 'نعم',
+          onPress: () => this.add_subject(subject),
+        },
+      ],
+      { cancelable: false },
+    );
   }
 
   async add_subject(subject) {
@@ -94,11 +109,9 @@ class SubjectsList extends React.Component {
       }
     }
     else {
-      this.props.navigation.navigate('User');
+      Alert.alert('')
     }
   }
-
-
 
   render() {
     const { loading, search_string } = this.state;
@@ -116,70 +129,58 @@ class SubjectsList extends React.Component {
     const rightContent = (
       <TouchableOpacity onPress={() => console.log('s')} style={{ alignItems: 'center', justifyContent: 'center', width: 70, height: '100%', borderRadius: 5, marginLeft: 5, overflow: 'hidden' }}>
         <Icon name='plus' type='antdesign' size={18} color={common_styles.colors.main_light_color} />
-        <Text style={{ color: common_styles.colors.main_light_color, fontSize: 13 }}>اضافة</Text>
+        <Text style={{ color: common_styles.colors.main_light_color, fontSize: 13 }}>إضافة</Text>
       </TouchableOpacity>
     );
-    return (
-      <View style={styles.main_container}>
-        <View style={styles.search_container}>
-          {
-            this.state.search_string.length > 0 ?
-              <Icon name='cancel' onPress={() => this.local_search('')} type='MaterialIcons' color={common_styles.colors.main_color} />
-              :
-              <Icon name='search' type='FontAwesome' color='rgba(0,0,0,0.15)' />
-          }
-          <TextInput placeholder='ابحث عن اسم المادة . .' style={{ padding: 0, flex: 1, textAlign: 'right' }} value={search_string} onChangeText={(text) => this.local_search(text)} />
+    if (this.state.loading == false)
+      return (
+        <View style={styles.main_container}>
+          <View style={styles.search_container}>
+            {
+              this.state.search_string.length > 0 ?
+                <Icon name='cancel' onPress={() => this.local_search('')} type='MaterialIcons' color={common_styles.colors.main_color} />
+                :
+                <Icon name='search' type='FontAwesome' color='rgba(0,0,0,0.15)' />
+            }
+            <TextInput placeholder='ابحث عن اسم المادة . .' style={{ padding: 0, flex: 1, textAlign: 'right' }} value={search_string} onChangeText={(text) => this.local_search(text)} />
+          </View>
+
+          <ActivityIndicator style={{ display: loading ? 'flex' : 'none' }} animating={this.state.loading} size={24} color={common_styles.colors.main_color} />
+          <FlatList
+            removeClippedSubviews={true}
+            maxToRenderPerBatch={10}
+            initialNumToRender={10}
+            contentContainerStyle={{paddingBottom:15}}
+            data={this.state.searched_subjects}
+            renderItem={({ item }) =>
+              <Swipeable style={{ flex: 1, height: '100%', marginTop: 7 }} rightActionActivationDistance={70} rightContent={rightContent} onRightActionRelease={() => this.wannaAddAlert(item)} rightContentContainerStyle={{ flex: 1 }}>
+                <SubjectItem {...this.props} pk={item.pk} name={item.name} major={item.major} level={item.level} />
+              </Swipeable>
+            }
+            keyExtractor={(item) => item.pk.toString()}
+            ListEmptyComponent={<No_result_found />}
+          />
         </View>
-
-        <ActivityIndicator style={{ display: loading ? 'flex' : 'none' }} animating={this.state.loading} size={24} color={common_styles.colors.main_color} />
-        <FlatList
-          data={this.state.searched_subjects}
-          renderItem={({ item }) =>
-            <Swipeable style={{ flex: 1, height: '100%', marginTop: 7 }} rightActionActivationDistance={70} rightContent={rightContent} onRightActionRelease={() => this.add_subject(item)} rightContentContainerStyle={{ flex: 1 }}>
-              <SubjectItem {...this.props} pk={item.pk} name={item.name} major={item.major} level={item.level} />
-            </Swipeable>
-          }
-          keyExtractor={(item) => item.pk.toString()}
-          ListEmptyComponent={<No_result_found />}
-          refreshControl={
-            <RefreshControl
-              refreshing={this.state.refreshing}
-              style={{ elevation: 0, borderRadius: 0 }}
-
-              onRefresh={this._get_all_subjects.bind(this)}
-              progressBackgroundColor={common_styles.colors.main_back_color_d1}
-              colors={[common_styles.colors.main_color, common_styles.colors.pass_color,]}
+      );
+    else {
+      return (
+        <View style={{ flex: 1 }}>
+          <View style={[styles.main_container,{justifyContent:'center',alignContent:'center'}]}>
+            <ActivityIndicator
+              size='large'
+              color={common_styles.colors.main_color}
             />
-          }
-        />
-        {/* <AwesomeAlert
-        alertContainerStyle={{justifyContent:'center',alignItems:'center'}}
-          show={this.state.showAddAlert}
-          showProgress={false}
-          title="AwesomeAlert"
-          message="I have a message for you!"
-          closeOnTouchOutside={true}
-          closeOnHardwareBackPress={false}
-          showCancelButton={true}
-          showConfirmButton={true}
-          cancelText="No, cancel"
-          confirmText="Yes, delete it"
-          confirmButtonColor="#DD6B55"
-          onCancelPressed={() => {
-            this.hideAlert();
-          }}
-          onConfirmPressed={() => {
-            this.hideAlert();
-          }}
-        /> */}
-      </View>
-    );
+          </View>
+        </View>
+      );
+    }
   }
 };
 
 const styles = StyleSheet.create({
   main_container: {
-    ...style_objects.main_container
+    ...style_objects.main_container,
+    paddingBottom:0
   },
   search_container: {
     backgroundColor: '#ecf0f1',
