@@ -1,30 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableNativeFeedback, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableNativeFeedback, } from 'react-native';
 import { Icon } from 'react-native-elements';
 import common_styles from '../../../common/styles/common_styles';
 
-export default class SubjectItem extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
 
-  render() {
-    const { pk, name, major, level } = this.props;
+const SubjectItem = (props) => {
+  const { pk, name, major } = props;
     return (
-      <TouchableNativeFeedback onPress={() => this.props.navigation.navigate('subject_detail', {
+      <TouchableNativeFeedback onPress={() => props.navigation.navigate('subject_detail', {
         subject_id: pk
       })}>
         <View style={styles.item_container}>
           <View style={{ flexDirection: 'row-reverse', alignItems: 'center', justifyContent: 'space-between', flex: 1 }}>
-            <View style={{ flexDirection: 'row', alignItems: 'center',flex:1,justifyContent:'flex-end' }}>
-              <Text style={{ marginRight: 10, color: common_styles.colors.main_light_color,flex:1,textAlign:'right' }}>{name}</Text>
+            <View style={{ flexDirection: 'row', alignItems: 'center', flex: 1, justifyContent: 'flex-end' }}>
+              <Text style={{ marginRight: 10, color: common_styles.colors.main_light_color, flex: 1, textAlign: 'right' }}>{name}</Text>
               <Icon color='#21303f' name='book' size={18} type='antdesign' />
             </View>
-            <TouchableOpacity onPress={() => alert('hi')}>
-              <Text style={styles.subject_major}>{major.name}</Text>
-            </TouchableOpacity>
+            <Text style={styles.subject_major}>{major.name}</Text>
           </View>
           <View style={{ marginRight: 5 }}>
             <Icon color='#21303f' name='left' size={17} type='antdesign' />
@@ -32,7 +24,6 @@ export default class SubjectItem extends React.Component {
         </View>
       </TouchableNativeFeedback>
     );
-  }
 };
 
 const styles = StyleSheet.create({
@@ -44,7 +35,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     backgroundColor: common_styles.colors.main_back_color_light,
     borderRadius: 6,
-    flex:1
+    flex: 1
   },
   subject_major: {
     color: '#fff',
@@ -56,3 +47,4 @@ const styles = StyleSheet.create({
 
   }
 });
+export default SubjectItem;
