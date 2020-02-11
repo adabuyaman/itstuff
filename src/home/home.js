@@ -57,7 +57,14 @@ export default class Home extends React.Component {
                 this.setState({ AddSubjectsMessage: false })
         }
         else {
-            this.setState({ loading: false, createAccountMessage: true, AddSubjectsMessage: false });
+            console.log('in saveUserInfo')
+            let userObject = {
+                name: '',
+                level: '',
+                major: '',
+                subjects: {}
+            }
+            await AsyncStorage.setItem('userInfo', JSON.stringify(userObject))
         }
     }
 
@@ -74,21 +81,7 @@ export default class Home extends React.Component {
                         </View>
                     </View>
                     <View style={[styles.main_container, { padding: 0 }]}>
-                        <View style={{ margin: 15, display: this.state.createAccountMessage ? 'flex' : 'none' }}>
-                            <TouchableNativeFeedback onPress={() => { }}>
-                                <View style={{ backgroundColor: common_styles.colors.pass_color, borderRadius: 5, flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 8 ,}}>
-                                    <TouchableOpacity onPress={() => alert('hi')} containerStyle={{ alignItems: 'center', justifyContent: 'center', }}>
-                                        <Icon name='closecircle' type='antdesign' size={15} color='rgba(0,0,0,0.25)' />
-                                    </TouchableOpacity>
-                                    <View style={{ flexDirection: 'row', flex: 1, alignItems: 'center', }}>
-                                        <Text style={{ color: common_styles.colors.main_light_color, flex: 1, fontSize: 12.5 }}>
-                                            {' انشئ حساباً لاضافة المواد الى جدولك والصفحة الرئيسية.'}
-                                        </Text>
-                                    </View>
-                                </View>
-                            </TouchableNativeFeedback>
-                        </View>
-                        <View style={{ margin: 15, display: this.state.AddSubjectsMessage ? 'flex' : 'none' }}>
+                        {/* <View style={{ margin: 15, display: this.state.AddSubjectsMessage ? 'flex' : 'none' }}>
                             <TouchableNativeFeedback onPress={() => { }}>
                                 <View style={{ backgroundColor: common_styles.colors.pass_color, borderRadius: 5, flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 8 }}>
                                     <TouchableOpacity onPress={() => alert('hi')} style={{ alignItems: 'center', justifyContent: 'center', }}>
@@ -101,7 +94,7 @@ export default class Home extends React.Component {
                                     </View>
                                 </View>
                             </TouchableNativeFeedback>
-                        </View>
+                        </View> */}
 
                         <FlatList
                             contentContainerStyle={{ paddingVertical: 12, paddingHorizontal: 12 }}
@@ -133,16 +126,6 @@ export default class Home extends React.Component {
                                     </View>
                                 </View>
                             )}
-                        // refreshControl={
-                        //     <RefreshControl
-                        //         refreshing={this.state.refreshing}
-                        //         style={{ elevation: 0, borderRadius: 0 }}
-
-                        //         onRefresh={this._forceUpdate.bind(this)}
-                        //         progressBackgroundColor={common_styles.colors.main_back_color_d1}
-                        //         colors={[common_styles.colors.main_color, common_styles.colors.pass_color,]}
-                        //     />
-                        // }
                         />
                     </View>
                 </View>
