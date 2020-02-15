@@ -16,15 +16,16 @@ class SubjectsList extends React.Component {
       loading: false,
       search_string: '',
       userInfo: null,
+      mysubjects: null,
       addBG: common_styles.colors.fail_color,
       loading: false,
     };
-    this._get_all_subjects = this._get_all_subjects.bind(this);
+    this.get_mysubjects = this.get_mysubjects.bind(this);
   }
 
   async componentDidMount() {
     await this._get_all_subjects();
-    await this.get_user_data();
+    await this.get_mysubjects();
   }
 
   static navigationOptions = ({ navigation }) => {
@@ -32,16 +33,23 @@ class SubjectsList extends React.Component {
       title: 'المواد الدراسية',
       headerRight: () => (
         <TouchableOpacity onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-          <Icon name='menu' containerStyle={{paddingHorizontal:20,height:'100%',justifyContent:'center',alignItems:'center'}} size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
+          <Icon name='menu' containerStyle={{ paddingHorizontal: 20, height: '100%', justifyContent: 'center', alignItems: 'center' }} size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
         </TouchableOpacity>
       ),
     };
   };
 
-  async get_user_data() {
-    let userInfo = await AsyncStorage.getItem('userInfo');
-    userInfo = JSON.parse(userInfo);
-    this.setState({ userInfo: userInfo })
+  async get_mysubjects() {
+    let mysubjects = await AsyncStorage.getItem('mysubjects');
+    if (mysubjects != undefined) {
+      mysubjects = JSON.parse(mysubjects);
+      console.log(mysubjects);
+      return mysubjects;
+    }
+    else {
+      await AsyncStorage.setItem('mysubjects', JSON.stringify({}));
+      return {};
+    }
   }
 
   async _get_all_subjects() {
@@ -91,27 +99,40 @@ class SubjectsList extends React.Component {
   }
 
   async add_subject(subject) {
-    if (this.state.userInfo != null) {
-      let userObject = this.state.userInfo;
-      if (userObject.subjects != undefined) {
-        userObject.subjects[subject.pk.toString()] = subject;
-      }
-      else {
-        userObject.subjects = {};
-        userObject.subjects[subject.pk.toString()] = subject;
-      }
+      let mysubjects = await this.get_mysubjects();
+      mysubjects[subject.pk.toString()] = subject;
       try {
-        await AsyncStorage.setItem('userInfo', JSON.stringify(userObject));
+        console.log(mysubjects);
+        await AsyncStorage.setItem('mysubjects', JSON.stringify(mysubjects));
         console.log('subject added');
       }
       catch (error) {
         console.log(error);
       }
-    }
-    else {
-      Alert.alert('')
-    }
   }
+
+  // async add_subject(subject) {
+  //   if (this.state.userInfo != null) {
+  //     let userObject = this.state.userInfo;
+  //     if (userObject.subjects != undefined) {
+  //       userObject.subjects[subject.pk.toString()] = subject;
+  //     }
+  //     else {
+  //       userObject.subjects = {};
+  //       userObject.subjects[subject.pk.toString()] = subject;
+  //     }
+  //     try {
+  //       await AsyncStorage.setItem('userInfo', JSON.stringify(userObject));
+  //       console.log('subject added');
+  //     }
+  //     catch (error) {
+  //       console.log(error);
+  //     }
+  //   }
+  //   else {
+  //     Alert.alert('')
+  //   }
+  // }
 
   render() {
     const { loading, search_string } = this.state;
@@ -150,7 +171,7 @@ class SubjectsList extends React.Component {
             removeClippedSubviews={true}
             maxToRenderPerBatch={10}
             initialNumToRender={10}
-            contentContainerStyle={{paddingBottom:15}}
+            contentContainerStyle={{ paddingBottom: 15 }}
             data={this.state.searched_subjects}
             renderItem={({ item }) =>
               <Swipeable style={{ flex: 1, height: '100%', marginTop: 7 }} rightActionActivationDistance={70} rightContent={rightContent} onRightActionRelease={() => this.wannaAddAlert(item)} rightContentContainerStyle={{ flex: 1 }}>
@@ -165,10 +186,10 @@ class SubjectsList extends React.Component {
     else {
       return (
         <View style={{ flex: 1 }}>
-          <View style={[styles.main_container,{justifyContent:'center',alignContent:'center'}]}>
+          <View style={[styles.main_container, { justifyContent: 'center', alignContent: 'center' }]}>
             <ActivityIndicator
               size='large'
-              color={common_styles.colors.main_color}
+              color={common_styles.colors.main_secondary_color}
             />
           </View>
         </View>
@@ -180,7 +201,7 @@ class SubjectsList extends React.Component {
 const styles = StyleSheet.create({
   main_container: {
     ...style_objects.main_container,
-    paddingBottom:0
+    paddingBottom: 0
   },
   search_container: {
     backgroundColor: '#ecf0f1',

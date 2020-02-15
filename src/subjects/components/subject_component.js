@@ -44,7 +44,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     paddingVertical: 3,
     paddingHorizontal: 7,
-
   }
 });
 export default SubjectItem;

@@ -1,37 +1,40 @@
 import React from 'react';
-import { StyleSheet, View, Text, FlatList, ActivityIndicator, Share, RefreshControl, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, FlatList, ActivityIndicator, RefreshControl } from 'react-native';
 import common_styles, { style_objects } from '../../common/styles/common_styles';
 import { Icon } from 'react-native-elements';
 import { DrawerActions } from 'react-navigation-drawer';
 import { TouchableNativeFeedback, TouchableOpacity } from 'react-native-gesture-handler';
-import AsyncStorage from '@react-native-community/async-storage';
+import LinearGradient from 'react-native-linear-gradient';
 import SectionButton from './components/sectionButton';
+import Article from './components/article';
 
 export default class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            subjects: [],
+            articles: [],
             loading: false,
-            search_string: '',
-            userInfo: null,
-            createAccountMessage: false,
-            AddSubjectsMessage: false,
             refresher: -1
         };
     }
 
     async componentDidMount() {
-        await this.get_user_data();
-        this.focusListener = this.props.navigation.addListener('willFocus', () => {
-            this._forceUpdate();
-        });
+        this.setState({ loading: true })
+        await this.importArticles();
+        this.setState({ loading: false })
     }
 
-    async _forceUpdate() {
-        console.log('Updating..')
-        await this.get_user_data();
-        this.setState({ refresher: 0 });
+    async importArticles() {
+        try {
+            let response = await fetch(
+                'http://laitheyad1.pythonanywhere.com/articles/',
+            );
+            let articles = await response.json();
+            console.log('ask ask,', articles);
+            this.setState({ articles });
+        } catch (error) {
+            console.error(error);
+        }
     }
 
     static navigationOptions = ({ navigation }) => {
@@ -45,109 +48,59 @@ export default class Home extends React.Component {
         };
     };
 
-    async get_user_data() {
-        this.setState({ loading: true });
-        let userInfo = await AsyncStorage.getItem('userInfo');
-        if (userInfo != undefined) {
-            userInfo = JSON.parse(userInfo);
-            this.setState({ userInfo: userInfo, loading: false, subjects: userInfo.subjects });
-            if (Object.values(userInfo.subjects).length < 1)
-                this.setState({ AddSubjectsMessage: true })
-            else
-                this.setState({ AddSubjectsMessage: false })
-        }
-        else {
-            console.log('in saveUserInfo')
-            let userObject = {
-                name: '',
-                level: '',
-                major: '',
-                subjects: {}
-            }
-            await AsyncStorage.setItem('userInfo', JSON.stringify(userObject))
-        }
-    }
-
     render() {
-        const { loading } = this.state;
-        if (loading != true)
-            return (
-                <View style={{ flex: 1 }}>
-                    <View style={style_objects.headerBar}>
-                        <View style={{}}>
-                            <TouchableOpacity onPress={() => this.props.navigation.dispatch(DrawerActions.openDrawer())} style={{ height: '100%', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 20 }}>
-                                <Icon name='menu' size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
-                            </TouchableOpacity>
-                        </View>
-                    </View>
-                    <View style={[styles.main_container, { padding: 0 }]}>
-                        {/* <View style={{ margin: 15, display: this.state.AddSubjectsMessage ? 'flex' : 'none' }}>
-                            <TouchableNativeFeedback onPress={() => { }}>
-                                <View style={{ backgroundColor: common_styles.colors.pass_color, borderRadius: 5, flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 8 }}>
-                                    <TouchableOpacity onPress={() => alert('hi')} style={{ alignItems: 'center', justifyContent: 'center', }}>
-                                        <Icon name='closecircle' type='antdesign' size={15} color='rgba(0,0,0,0.25)' />
-                                    </TouchableOpacity>
-                                    <View style={{ flexDirection: 'row', flex: 1, alignItems: 'center', }}>
-                                        <Text style={{ color: common_styles.colors.main_light_color, flex: 1, fontSize: 12.5 }}>
-                                            {' انشئ حساباً لاضافة المواد الى جدولك والصفحة الرئيسية.'}
-                                        </Text>
-                                    </View>
-                                </View>
-                            </TouchableNativeFeedback>
-                        </View> */}
+        return (
+            <View style={{ flex: 1 }}>
 
-                        <FlatList
-                            contentContainerStyle={{ paddingVertical: 12, paddingHorizontal: 12 }}
-                            // ListHeaderComponent={
-                            //     <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-                            //         <View style={{ backgroundColor: common_styles.colors.main_back_color_d2 }}>
-                            //             <SectionButton label='المواد الدراسية' icon='book' />
-                            //         </View>
-                            //     </View>
-                            // }
-                            numColumns={2}
-                            keyExtractor={(item, index) => index.toString()}
-                            extraData={this.state}
-                            data={Object.values(this.state.subjects)}
-                            renderItem={({ item, index }) => (
-                                <View style={{ flex: 1, marginRight: index % 2 == 0 && (index + 1) != Object.keys(this.state.subjects).length ? 12 : 0, marginBottom: 15 }}>
-                                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: common_styles.colors.main_back_color_d1, paddingHorizontal: 10, paddingVertical: 8, borderTopStartRadius: 7, borderTopEndRadius: 7, }}>
-                                        <Text style={{ color: common_styles.colors.main_light_color, textAlign: 'center', flex: 1, fontSize: 11.5 }}>{item.name}</Text>
-                                    </View>
-                                    <View style={{ padding: 10, backgroundColor: common_styles.colors.main_back_color_light, borderBottomEndRadius: 5, borderBottomStartRadius: 5, minHeight: 20, justifyContent: 'center', alignItems: 'center', flex: 1 }}>
-                                        <Icon
-                                            containerStyle={{ borderRadius: 50, padding: 0, backgroundColor: 'rgba(0,0,0,0.1)' }}
-                                            reverse
-                                            name='book'
-                                            type='antdesign'
-                                            color={common_styles.colors.main_color}
-                                            reverseColor={common_styles.colors.main_light_color}
-                                        />
-                                    </View>
+                <View style={style_objects.headerBar}>
+                    <Icon name='menu' size={22} containerStyle={{ opacity: 0, paddingHorizontal: 20 }} />
+                    <Text style={{ color: '#fff' }}>الصفحة الرئيسية</Text>
+                    <View style={{}}>
+                        <TouchableOpacity onPress={() => this.props.navigation.dispatch(DrawerActions.openDrawer())} style={{ height: '100%', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 20 }}>
+                            <Icon name='menu' size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                <View style={[styles.main_container, { padding: 0 }]}>
+                    <View style={{ flex: 1, }}>
+                        {
+                            this.state.loading ?
+                                <View style={{ justifyContent: 'center', alignItems: 'center', flex: 1 }}>
+                                    <ActivityIndicator size='large' color={common_styles.colors.main_secondary_color} />
                                 </View>
-                            )}
-                        />
+                                :
+                                <FlatList
+                                    ListHeaderComponent={() => (
+                                        <View>
+                                            <View style={{ flexDirection: 'row-reverse', alignItems: 'center', justifyContent: 'center', zIndex: 1, backgroundColor: common_styles.colors.main_back_color, paddingBottom: 6 }}>
+                                                <SectionButton navigation={this.props.navigation} label='المواد الدراسية' icon='book' screen='subjectsList' />
+                                                <SectionButton navigation={this.props.navigation} label='جدولُك الدراسي' icon='table' screen='subjectsList' />
+                                                <SectionButton navigation={this.props.navigation} label='حساب المعدل' icon='calculator' screen='GPACalculator' />
+                                            </View>
+                                            <View style={{ backgroundColor: common_styles.colors.main_back_color, }}>
+                                                <View style={{ backgroundColor: common_styles.colors.main_back_color_d1, borderTopRightRadius: 5, borderTopLeftRadius: 5, justifyContent: 'center', alignItems: 'flex-end', paddingVertical: 8, paddingHorizontal: 10 }}>
+                                                    <Text style={{ color: common_styles.colors.main_light_color, borderRightWidth: 2, borderColor: common_styles.colors.main_secondary_color, fontSize: 13, paddingHorizontal: 8 }}>أخر الأخبار</Text>
+                                                </View>
+                                            </View>
+                                            <LinearGradient colors={['rgba(0,0,0,0.25)', 'transparent',]} style={styles.linearGradient} />
+                                        </View>
+                                    )}
+                                    stickyHeaderIndices={[0]}
+                                    contentContainerStyle={{ paddingHorizontal: 15, }}
+                                    data={this.state.articles}
+                                    extraData={this.state.articles}
+                                    renderItem={({ item, index }) => (
+                                        <View style={{ marginBottom: 10 }}>
+                                            <Article title={item.title} link={item.linke} reference={item.reference} />
+                                        </View>
+                                    )}
+                                    keyExtractor={(item, index) => index.toString()}
+                                />
+                        }
                     </View>
                 </View>
-            );
-        else {
-            return (
-                <View style={{ flex: 1 }}>
-                    <View style={style_objects.headerBar}>
-                        <View style={{}}>
-                            <TouchableOpacity onPress={() => this.props.navigation.dispatch(DrawerActions.openDrawer())}>
-                                <Icon name='menu' size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
-                            </TouchableOpacity>
-                        </View>
-                    </View>
-                    <View style={[styles.main_container,]}>
-                        <ActivityIndicator
-                            size='large'
-                        />
-                    </View>
-                </View>
-            );
-        }
+            </View>
+        );
     }
 };
 
@@ -155,5 +108,12 @@ const styles = StyleSheet.create({
     main_container: {
         ...style_objects.main_container,
     },
-
+    linearGradient: {
+        overflow: 'hidden',
+        position: 'absolute',
+        bottom: -50,
+        zIndex: 5,
+        height: 50,
+        width: '100%'
+    }
 });
