@@ -8,7 +8,6 @@ import {
     Image,
 } from 'react-native';
 import common_styles, { style_objects } from '../styles/common_styles';
-import { Icon } from 'react-native-elements';
 import { DrawerItems } from 'react-navigation-drawer';
 import { SafeAreaView } from 'react-navigation';
 import { TouchableNativeFeedback } from 'react-native-gesture-handler';

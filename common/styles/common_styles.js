@@ -5,6 +5,8 @@ const common_styles = {
         main_back_color_d1:'#232e3a',
         main_back_color_light:'#34495e',
         main_color:'#2980b9',
+        main_color_d1:'#316c91',
+        main_secondary_color:'#3498db',
         main_light_color:'#ecf0f1',
         fail_color:'#e74c3c',
         pass_color:'#27ae60'
@@ -21,10 +23,9 @@ const style_objects = StyleSheet.create({
         width:'100%',
         height:50,
         backgroundColor:common_styles.colors.main_color,
-        alignItems:'center',
         flexDirection:'row',
-        justifyContent:'flex-end',
-        // paddingHorizontal:20
+        alignItems:'center',
+        justifyContent:'space-between',
     }
 })
 
