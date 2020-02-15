@@ -46,8 +46,8 @@ export default class contactus extends React.Component {
 
 
                 </View>
-                <View style={{ marginLeft: 15 ,marginRight:15}}>
-                    <Text style={[styles.paragaroh, { color: '#fff' ,fontSize:16}]}>
+                <View style={{margin:15}}>
+                    <Text style={[styles.paragaroh, {padding:12, color: '#fff' ,fontSize:16}]}>
                     في حال اردتم التواصل معنا للتبليغ عن بعض الأخطاء 
                     , أو إقتراح أفكار جديدة , أو اضافة دوسيات جديدة  
                     يمكنكم التواصل معنا على الحسابات التالية :
