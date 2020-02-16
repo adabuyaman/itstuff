@@ -74,7 +74,7 @@ export default class Home extends React.Component {
                                         <View>
                                             <View style={{ flexDirection: 'row-reverse', alignItems: 'center', justifyContent: 'center', zIndex: 1, backgroundColor: common_styles.colors.main_back_color, paddingBottom: 6 }}>
                                                 <SectionButton navigation={this.props.navigation} label='المواد الدراسية' icon='book' screen='subjectsList' />
-                                                <SectionButton navigation={this.props.navigation} label='جدولُك الدراسي' icon='table' screen='subjectsList' />
+                                                <SectionButton navigation={this.props.navigation} label='جدولُك الدراسي' icon='table' screen='mySubjects' />
                                                 <SectionButton navigation={this.props.navigation} label='حساب المعدل' icon='calculator' screen='GPACalculator' />
                                             </View>
                                             <View style={{ backgroundColor: common_styles.colors.main_back_color, }}>
@@ -90,8 +90,8 @@ export default class Home extends React.Component {
                                     data={this.state.articles}
                                     extraData={this.state.articles}
                                     renderItem={({ item, index }) => (
-                                        <View style={{ marginBottom: 10 }}>
-                                            <Article title={item.title} link={item.linke} reference={item.reference} />
+                                        <View style={{ paddingTop: 10 }}>
+                                            <Article title={item.title} link={item.link} reference={item.reference} date={item.date} />
                                         </View>
                                     )}
                                     keyExtractor={(item, index) => index.toString()}
@@ -109,6 +109,7 @@ const styles = StyleSheet.create({
         ...style_objects.main_container,
     },
     linearGradient: {
+        opacity:0.75,
         overflow: 'hidden',
         position: 'absolute',
         bottom: -50,

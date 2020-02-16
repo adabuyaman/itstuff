@@ -4,7 +4,7 @@ import { Icon } from 'react-native-elements';
 import common_styles from '../styles/common_styles';
 
 const Button = (props) => {
-    const { label, color, onPress, icon, iconType } = props;
+    const { label, color, onPress, icon, iconType,containerStyle } = props;
     const styles = StyleSheet.create({
         button_container: {
             backgroundColor: color ? color : common_styles.colors.main_color,
@@ -13,14 +13,15 @@ const Button = (props) => {
             alignItems: 'center',
             paddingVertical: 10,
             paddingHorizontal: 20,
-            borderRadius: 7
+            borderRadius: 7,
+            ...containerStyle,
         },
         label: {
             color: common_styles.colors.main_light_color,
             textTransform: 'capitalize'
         },
         icon_container_style:{
-            marginLeft:4
+            marginLeft: label == '' || label == undefined ? 0 : 4
         }
     })
 

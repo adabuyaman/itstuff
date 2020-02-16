@@ -22,7 +22,7 @@ export default class CustomDrawer extends React.Component {
                         <View style={{ padding: 6 }}>
                             <Text style={{ color: common_styles.colors.main_light_color, fontSize: 25 }}>شارك!</Text>
                             <Text style={{ color: common_styles.colors.main_light_color, fontSize: 13 }}>{'ساعدنا في جمع المزيد\nمن الدوسيات والأسئلة.'}</Text>
-                            <TouchableOpacity style={{ paddingHorizontal: 9 }} onPress={()=>1}>
+                            <TouchableOpacity style={{ paddingHorizontal: 9 }} onPress={()=>this.props.navigation.navigate('contactus')}>
                                 <Text style={{ color: common_styles.colors.main_light_color, fontSize: 13, textAlign: 'center', backgroundColor: common_styles.colors.main_color, borderRadius: 5, padding: 5, marginTop: 6 }}>تواصل معنا</Text>
                             </TouchableOpacity>
                         </View>

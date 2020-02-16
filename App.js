@@ -42,31 +42,31 @@ const MainNavigator = createDrawerNavigator({
     }),
   },
 
-  User: {
-    screen: Profile,
-    navigationOptions: ({ navigation }) => ({
-      title: 'الصفحة الشخصية',
-      drawerIcon: ({ tintColor }) => (
-        <Icon size={18} color={tintColor} name='user' type='antdesign' />
-      )
-    }),
-  },
+  // User: {
+  //   screen: Profile,
+  //   navigationOptions: ({ navigation }) => ({
+  //     title: 'الصفحة الشخصية',
+  //     drawerIcon: ({ tintColor }) => (
+  //       <Icon size={18} color={tintColor} name='user' type='antdesign' />
+  //     )
+  //   }),
+  // },
 
-  contactus:{
-    screen:contactus,
-    navigationOptions: ({ navigation }) => ({
-      title: 'تواصل معنا',
-      drawerIcon: ({tintColor}) => (
-        <Icon size={18} color={tintColor} name='calculator' type='antdesign'/>
-      )
-      
-    }),
-  },
-  
   GPACalculator: {
     screen: gpaCalculator,
     navigationOptions: ({ navigation }) => ({
       title: 'حساب المعدل',
+      drawerIcon: ({ tintColor }) => (
+        <Icon size={18} color={tintColor} name='calculator' type='antdesign' />
+      )
+
+    }),
+  },
+
+  contactus: {
+    screen: contactus,
+    navigationOptions: ({ navigation }) => ({
+      title: 'تواصل معنا',
       drawerIcon: ({ tintColor }) => (
         <Icon size={18} color={tintColor} name='calculator' type='antdesign' />
       )

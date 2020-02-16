@@ -5,7 +5,7 @@ import { Icon } from 'react-native-elements';
 import { DrawerActions } from 'react-navigation-drawer';
 import { TouchableNativeFeedback, TouchableOpacity } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-community/async-storage';
-
+import Button from '../../common/components/button';
 
 export default class MySubjects extends React.Component {
     constructor(props) {
@@ -16,6 +16,7 @@ export default class MySubjects extends React.Component {
             mysubjects: null,
             createAccountMessage: false,
             AddSubjectsMessage: false,
+            showSingleDelete: true,
             refresher: -1
         };
     }
@@ -99,7 +100,11 @@ export default class MySubjects extends React.Component {
         return (
             <View style={{ flex: 1 }}>
                 <View style={style_objects.headerBar}>
-                    <Icon name='menu' size={22} containerStyle={{ opacity: 0, paddingHorizontal: 20 }} />
+                    <View style={{ opacity: 0 }}>
+                        <TouchableOpacity onPress={() => 1} style={{ height: '100%', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 20 }}>
+                            <Icon name='menu' size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
+                        </TouchableOpacity>
+                    </View>
                     <Text style={{ color: '#fff' }}>جدولُكَ الدراسي</Text>
                     <View style={{}}>
                         <TouchableOpacity onPress={() => this.props.navigation.dispatch(DrawerActions.openDrawer())} style={{ height: '100%', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 20 }}>
@@ -107,37 +112,37 @@ export default class MySubjects extends React.Component {
                         </TouchableOpacity>
                     </View>
                 </View>
-                <View style={[styles.main_container, { padding: 0 }]}>
-                    {/* <View style={{ margin: 15, display: this.state.AddSubjectsMessage ? 'flex' : 'none' }}>
-                            <TouchableNativeFeedback onPress={() => { }}>
-                                <View style={{ backgroundColor: common_styles.colors.pass_color, borderRadius: 5, flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 8 }}>
-                                    <TouchableOpacity onPress={() => alert('hi')} style={{ alignItems: 'center', justifyContent: 'center', }}>
-                                        <Icon name='closecircle' type='antdesign' size={15} color='rgba(0,0,0,0.25)' />
-                                    </TouchableOpacity>
-                                    <View style={{ flexDirection: 'row', flex: 1, alignItems: 'center', }}>
-                                        <Text style={{ color: common_styles.colors.main_light_color, flex: 1, fontSize: 12.5 }}>
-                                            {' انشئ حساباً لاضافة المواد الى جدولك والصفحة الرئيسية.'}
-                                        </Text>
-                                    </View>
-                                </View>
-                            </TouchableNativeFeedback>
-                        </View> */}
 
+                <View style={[styles.main_container, { padding: 0 }]}>
                     <FlatList
-                        contentContainerStyle={{ paddingVertical: 12, paddingHorizontal: 12 }}
+                        contentContainerStyle={{ paddingVertical: 12, paddingHorizontal: 12, }}
                         numColumns={2}
                         keyExtractor={(item, index) => index.toString()}
                         extraData={this.state}
+                        ListEmptyComponent={() => (
+                            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                                <Icon color='rgba(0,0,0,0.5)' name='slack-square' type='antdesign' size={50} containerStyle={{ marginBottom: 3, }} />
+                                <Text style={{ textAlign: 'center', fontSize: 16, fontWeight: 'bold', color: 'rgba(0,0,0,0.5)' }}>{'جدول المواد فارغ,'}</Text>
+                                <Text style={{ textAlign: 'center', fontSize: 16, fontWeight: 'bold', color: common_styles.colors.main_color,textDecorationLine:'underline',textDecorationStyle:'dotted' }} onPress={()=>this.props.navigation.navigate('subjectsList')}>
+                                    إضافة موادك الخاصة.
+                                </Text>
+                            </View>
+                        )}
                         data={this.state.mysubjects ? Object.values(this.state.mysubjects) : []}
                         renderItem={({ item, index }) => (
                             <View style={{ flex: 1, marginRight: (index % 2 == 0) && (index + 1 != Object.keys(this.state.mysubjects).length) ? 12 : 0, marginBottom: 15 }}>
-                                <TouchableOpacity onPress={() => this.confirm_delete(item)} containerStyle={{ position: 'absolute', top: -9, right: -9, padding: 5, zIndex: 5 }}>
-                                    <Icon name='closecircle' type='antdesign' color={common_styles.colors.fail_color} size={16} />
+                                <TouchableOpacity onPress={() => this.confirm_delete(item)} containerStyle={{ position: 'absolute', top: -9, right: -9, padding: 5, zIndex: 5, }}>
+                                    <Icon containerStyle={{ display: this.state.showSingleDelete ? 'flex' : 'none' }} name='closecircle' type='antdesign' color={common_styles.colors.fail_color} size={16} />
                                 </TouchableOpacity>
                                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: common_styles.colors.main_back_color_d1, paddingHorizontal: 10, paddingVertical: 8, borderTopStartRadius: 7, borderTopEndRadius: 7, }}>
                                     <Text style={{ color: common_styles.colors.main_light_color, textAlign: 'center', flex: 1, fontSize: 11.5 }}>{item.name}</Text>
                                 </View>
-                                <View style={{ padding: 10, backgroundColor: common_styles.colors.main_back_color_light, borderBottomEndRadius: 5, borderBottomStartRadius: 5, minHeight: 20, justifyContent: 'center', alignItems: 'center', flex: 1 }}>
+                                <TouchableOpacity
+                                    style={{ padding: 10, backgroundColor: common_styles.colors.main_back_color_light, borderBottomEndRadius: 5, borderBottomStartRadius: 5, minHeight: 20, justifyContent: 'center', alignItems: 'center', flex: 1 }}
+                                    onPress={() => this.props.navigation.navigate('subject_detail', {
+                                        subject_id: item.pk
+                                    })}
+                                >
                                     <Icon
                                         containerStyle={{ borderRadius: 50, padding: 0, backgroundColor: 'rgba(0,0,0,0.1)' }}
                                         reverse
@@ -146,7 +151,7 @@ export default class MySubjects extends React.Component {
                                         color={common_styles.colors.main_color}
                                         reverseColor={common_styles.colors.main_light_color}
                                     />
-                                </View>
+                                </TouchableOpacity>
                             </View>
                         )}
                     />
