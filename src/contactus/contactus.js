@@ -67,7 +67,7 @@ export default class contactus extends React.Component {
 
     render() {
         return (
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1,backgroundColor:common_styles.colors.main_back_color }}>
                 <View style={style_objects.headerBar}>
                     <View style={{ opacity: 0 }}>
                         <TouchableOpacity onPress={() => 1} style={{ height: '100%', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 20 }}>
