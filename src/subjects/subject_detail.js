@@ -13,7 +13,7 @@ import NotebookFile, { TestbankFile } from './components/fileItem'
 import common_styles from '../../common/styles/common_styles';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-community/async-storage';
-
+import links from '../../common/indexes/index'
 
 class SubjectDetailView extends React.Component {
   constructor(props) {
@@ -93,7 +93,7 @@ class SubjectDetailView extends React.Component {
     this.setState({ subject_id: this.props.navigation.getParam('subject_id', null) }, async () => {
       if (this.state.subject_id != null) {
         try {
-          await fetch('http://laitheyad1.pythonanywhere.com/subjects/' + this.state.subject_id)
+          await fetch(links.SubjectsApi + this.state.subject_id)
             .then((response) => response.json())
             .then((responseJson) => {
               this.setState({ subject_object: responseJson }) //  () => //console.log(this.state.subject_object)

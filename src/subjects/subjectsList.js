@@ -6,6 +6,7 @@ import { Icon } from 'react-native-elements';
 import { DrawerActions } from 'react-navigation-drawer';
 import Swipeable from '../../common/components/swipable';
 import AsyncStorage from '@react-native-community/async-storage';
+import links from '../../common/indexes/index'
 
 class SubjectsList extends React.Component {
   constructor(props) {
@@ -55,7 +56,7 @@ class SubjectsList extends React.Component {
   async _get_all_subjects() {
     this.setState({ loading: true });
     try {
-      await fetch('http://laitheyad1.pythonanywhere.com/subjects/')
+      await fetch(links.SubjectsApi)
         .then((response) => response.json())
         .then((responseJson) => {
           this.setState({ subjects: responseJson, searched_subjects: responseJson })

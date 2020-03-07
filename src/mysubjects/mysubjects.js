@@ -6,7 +6,6 @@ import { DrawerActions } from 'react-navigation-drawer';
 import { TouchableNativeFeedback, TouchableOpacity } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-community/async-storage';
 import Button from '../../common/components/button';
-
 export default class MySubjects extends React.Component {
     constructor(props) {
         super(props);

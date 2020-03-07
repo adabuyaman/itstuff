@@ -7,7 +7,7 @@ import { TouchableNativeFeedback, TouchableOpacity } from 'react-native-gesture-
 import LinearGradient from 'react-native-linear-gradient';
 import SectionButton from './components/sectionButton';
 import Article from './components/article';
-
+import links from '../../common/indexes/index'
 export default class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -26,9 +26,7 @@ export default class Home extends React.Component {
 
     async importArticles() {
         try {
-            let response = await fetch(
-                'http://laitheyad1.pythonanywhere.com/articles/',
-            );
+            let response = await fetch(links.ArticlesApi);
             let articles = await response.json();
             //console.log('ask ask,', articles);
             this.setState({ articles });
