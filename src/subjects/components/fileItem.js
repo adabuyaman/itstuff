@@ -35,7 +35,7 @@ const TestbankFile = (props) => {
             <Icon color='#5F6368' name='pdffile1' size={17} type='antdesign' />
           </View>
           <View style={{ flexDirection: 'row' }}>
-            <Text style={styles.notebook_item_author_name}>{object.reference}</Text>
+            <Text style={[styles.notebook_item_author_name,{display:object.reference=='-' ? 'none':'flex'}]}>{object.reference}</Text>
             <Text style={styles.notebook_item_author_name}>{object.type}</Text>
           </View>
         </View>
