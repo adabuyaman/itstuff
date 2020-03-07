@@ -42,7 +42,7 @@ export default class Profile extends React.Component {
   }
 
   async saveUserInfo() {
-    console.log('in saveUserInfo')
+    //console.log('in saveUserInfo')
     let userObject = {
       name: this.state.name,
       level: this.state.level,
@@ -64,10 +64,10 @@ export default class Profile extends React.Component {
           level: userInfoObject.level,
           subjects: userInfoObject.subjects
         })
-        console.log('user object:', userInfo)
+        //console.log('user object:', userInfo)
       }
       else {
-        console.log('not a user')
+        //console.log('not a user')
       }
     }
     catch (error) {
@@ -221,7 +221,7 @@ const styles = StyleSheet.create({
 //   }
 
 //   async saveUserInfo() {
-//     console.log('in saveUserInfo')
+//     //console.log('in saveUserInfo')
 //     let userObject = {
 //       name: this.state.name,
 //       level: this.state.level,
@@ -243,14 +243,14 @@ const styles = StyleSheet.create({
 //           level: userInfoObject.level,
 //           subjects: userInfoObject.subjects
 //         })
-//         console.log('user object:', userInfo)
+//         //console.log('user object:', userInfo)
 //       }
 //       else {
-//         console.log('not a user')
+//         //console.log('not a user')
 //       }
 //     }
 //     catch (error) {
-//       console.log(error)
+//       //console.log(error)
 //     }
 //   }
 

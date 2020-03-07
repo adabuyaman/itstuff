@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/abuyaman/Desktop/sad app/IT/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "/home/laith/Desktop/sss/itstuff/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/home/abuyaman/.gradle/caches/transforms-2/files-2.1/614317848e0db62f23004ebed26df264/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "/home/laith/.gradle/caches/transforms-2/files-2.1/d211a8433a2b94f141523a95b4af825c/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

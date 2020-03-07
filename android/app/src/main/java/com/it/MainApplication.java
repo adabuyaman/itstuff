@@ -1,4 +1,4 @@
-package com.it;
+package com.daris;
 
 import android.app.Application;
 import android.content.Context;

@@ -30,7 +30,7 @@ export default class Home extends React.Component {
                 'http://laitheyad1.pythonanywhere.com/articles/',
             );
             let articles = await response.json();
-            console.log('ask ask,', articles);
+            //console.log('ask ask,', articles);
             this.setState({ articles });
         } catch (error) {
             console.error(error);

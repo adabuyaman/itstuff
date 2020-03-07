@@ -232,7 +232,7 @@ class gpaCalculator extends React.Component {
         <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{}}>
 
           <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-            <View style={styles.container, { borderBottomWidth: 1 }}>
+            <View style={styles.container, { borderBottomWidth: 1}}>
               <TextInput placeholderTextColor={common_styles.colors.main_light_color} placeholder="المعدل التراكمي" underlineColorAndroid='transparent' keyboardType={'numeric'}
                 value={this.state.fullGPA.toString()} style={{ width: 300, textAlign: 'center', color: common_styles.colors.main_light_color }} onChangeText={(text) => this.setState({ fullGPA: text })} />
             </View>
@@ -255,12 +255,12 @@ class gpaCalculator extends React.Component {
                 textStyle={{ color: '#fff', fontSize: 10 }}
 
               />
-              <Picker style={[styles.markPicker, { color: common_styles.colors.main_light_color, fontSize: 5, display: this.state.c1 ? 'flex' : 'none' }]} selectedValue={this.state.rm1} onValueChange={(text) => this.setState({ rm1: text })} >
+              <Picker   style={[styles.markPicker, {color: common_styles.colors.main_light_color, display: this.state.c1 ? 'flex' : 'none' }]}  selectedValue={this.state.rm1} onValueChange={(text) => this.setState({ rm1: text })} >
                 {markOptions.map((item, index) => {
                   return (<Picker.Item label={item.label} value={item.value} key={index} />)
                 })}
               </Picker>
-              <Picker style={[styles.markPicker, { color: common_styles.colors.main_light_color }]} selectedValue={this.state.m1} onValueChange={(text) => this.setState({ m1: text })} >
+              <Picker style={[styles.markPicker, {color: common_styles.colors.main_light_color }]} selectedValue={this.state.m1} onValueChange={(text) => this.setState({ m1: text })} >
                 {markOptions.map((item, index) => {
                   return (<Picker.Item label={item.label} value={item.value} key={index} />)
                 })}
@@ -523,7 +523,7 @@ const styles = StyleSheet.create(
       fontSize: 20
     },
     markPicker: {
-
+      
       width: '29%'
     },
     hoursPicker: {

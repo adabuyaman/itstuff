@@ -32,17 +32,17 @@ class SubjectDetailView extends React.Component {
   }
 
   // async toggleBookmark() {
-  //   console.log('in toggleBookmark')
+  //   //console.log('in toggleBookmark')
   //   this.setState({ bookmarked: !this.state.bookmarked }, async () => {
   //     this.props.navigation.setParams({ bookmarked: this.state.bookmarked });
   //     let bookmarks = this.state.bookmarks;
   //     bookmarks[this.state.subject_id.toString()] = this.state.bookmarked;
   //     try {
   //       await AsyncStorage.setItem('bookmarks', JSON.stringify(bookmarks))
-  //       console.log('saved')
+  //       //console.log('saved')
   //     }
   //     catch (error) {
-  //       console.log(error);
+  //       //console.log(error);
   //     }
   //   }
   //   );
@@ -55,30 +55,30 @@ class SubjectDetailView extends React.Component {
   // };
 
   // async getBookmark() {
-  //   console.log('in getBookmark')
+  //   //console.log('in getBookmark')
   //   try {
   //     let bookmarks = await AsyncStorage.getItem('bookmarks');
   //     if (bookmarks != null) {
   //       let bookmarksObject = JSON.parse(bookmarks);
-  //       console.log('bookmarksObject:', bookmarksObject, this.state.subject_id);
+  //       //console.log('bookmarksObject:', bookmarksObject, this.state.subject_id);
 
   //       this.setState({
   //         bookmarks: bookmarksObject
   //       });
-  //       console.log('subject id', this.state.subject_id.toString());
+  //       //console.log('subject id', this.state.subject_id.toString());
   //       const state = bookmarks[this.state.subject_id.toString()];
   //       if (state != undefined) {
-  //         console.log('in', state)
+  //         //console.log('in', state)
   //         this.setState({ bookmarked: bookmarks[this.state.subject_id.toString()] == true ? true : false })
   //       }
   //     }
   //     else {
-  //       console.log('not a single bookmark');
+  //       //console.log('not a single bookmark');
   //       await AsyncStorage.setItem('bookmarks', JSON.stringify({}))
   //     }
   //   }
   //   catch (error) {
-  //     console.log(error)
+  //     //console.log(error)
   //   }
   // }
 
@@ -96,11 +96,11 @@ class SubjectDetailView extends React.Component {
           await fetch('http://laitheyad1.pythonanywhere.com/subjects/' + this.state.subject_id)
             .then((response) => response.json())
             .then((responseJson) => {
-              this.setState({ subject_object: responseJson }) //  () => console.log(this.state.subject_object)
+              this.setState({ subject_object: responseJson }) //  () => //console.log(this.state.subject_object)
             });
         }
         catch (error) {
-          console.log(error);
+          //console.log(error);
         }
       }
       this.props.navigation.setParams({ title: this.state.subject_object.name });

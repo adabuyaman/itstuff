@@ -24,13 +24,13 @@ export default class MySubjects extends React.Component {
     async componentDidMount() {
         await this.get_mysubjects();
         this.focusListener = this.props.navigation.addListener('willFocus', () => {
-            console.log('updating..')
+            //console.log('updating..')
             this._forceUpdate();
         });
     }
 
     async _forceUpdate() {
-        console.log('forcing update..')
+        //console.log('forcing update..')
         await this.get_mysubjects();
     }
 
@@ -67,7 +67,7 @@ export default class MySubjects extends React.Component {
         if (mysubjects != undefined) {
             mysubjects = JSON.parse(mysubjects);
             this.setState({ mysubjects });
-            console.log(mysubjects)
+            //console.log(mysubjects)
         }
         else {
             await AsyncStorage.setItem('mysubjects', JSON.stringify({}));
@@ -89,7 +89,7 @@ export default class MySubjects extends React.Component {
     componentWillUnmount() {
         try {
             this.focusListener.remove();
-            console.log('removed');
+            //console.log('removed');
         }
         catch (er) {
             console.log(er);

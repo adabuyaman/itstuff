@@ -13,14 +13,14 @@ const TestbankFile = (props) => {
 
       if (result.action === Share.sharedAction) {
         if (result.activityType) {
-          console.log('shared with blabla');
+          //console.log('shared with blabla');
 
         } else {
-          console.log('shared');
+          //console.log('shared');
 
         }
       } else if (result.action === Share.dismissedAction) {
-        console.log('dismissed');
+        //console.log('dismissed');
       }
     } catch (error) {
       alert(error.message);
@@ -60,14 +60,14 @@ const NotebookFile = (props) => {
 
       if (result.action === Share.sharedAction) {
         if (result.activityType) {
-          console.log('shared with blabla');
+          //console.log('shared with blabla');
 
         } else {
-          console.log('shared');
+          //console.log('shared');
 
         }
       } else if (result.action === Share.dismissedAction) {
-        console.log('dismissed');
+        //console.log('dismissed');
       }
     } catch (error) {
       alert(error.message);

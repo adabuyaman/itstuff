@@ -43,7 +43,7 @@ class SubjectsList extends React.Component {
     let mysubjects = await AsyncStorage.getItem('mysubjects');
     if (mysubjects != undefined) {
       mysubjects = JSON.parse(mysubjects);
-      console.log(mysubjects);
+      // console.log(mysubjects);
       return mysubjects;
     }
     else {
@@ -102,9 +102,9 @@ class SubjectsList extends React.Component {
       let mysubjects = await this.get_mysubjects();
       mysubjects[subject.pk.toString()] = subject;
       try {
-        console.log(mysubjects);
+        // console.log(mysubjects);
         await AsyncStorage.setItem('mysubjects', JSON.stringify(mysubjects));
-        console.log('subject added');
+        // console.log('subject added');
       }
       catch (error) {
         console.log(error);

@@ -35,9 +35,9 @@ export default class MySubjectsModal extends React.Component {
     show(subjects) {
         this.setState({ subjects: subjects }, () => {
             this.refs.mysubjects.open();
-            console.log('HEREMANIGGA')
+            //console.log('HEREMANIGGA')
             for (let i = 0; i < this.state.subjects.length; i++) {
-                console.log(this.state.subjects[i].major.name)
+                //console.log(this.state.subjects[i].major.name)
             }
         })
     }
@@ -55,9 +55,9 @@ export default class MySubjectsModal extends React.Component {
     async remove_subject(subject) {
         let userObject = this.state.userInfo;
         if (this.state.userInfo != null) {
-            console.log('hi')
+            //console.log('hi')
             if (userObject.subjects != undefined) {
-                console.log(userObject.subjects[subject.pk.toString()].name);
+                //console.log(userObject.subjects[subject.pk.toString()].name);
                 delete userObject.subjects[subject.pk.toString()]
                 this.setState({ subjects: userObject.subjects });
             }
@@ -66,7 +66,7 @@ export default class MySubjectsModal extends React.Component {
         //saving data to userInfo
         try {
             await AsyncStorage.setItem('userInfo', JSON.stringify(userObject));
-            console.log('subject deleted');
+            //console.log('subject deleted');
         }
         catch (error) {
             console.log(error);

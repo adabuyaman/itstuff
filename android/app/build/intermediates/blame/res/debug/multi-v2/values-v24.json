@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/abuyaman/Desktop/sad app/IT/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/home/laith/Desktop/sss/itstuff/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/abuyaman/.gradle/caches/transforms-2/files-2.1/614317848e0db62f23004ebed26df264/res/values-v24/values-v24.xml",
+                    "source": "/home/laith/.gradle/caches/transforms-2/files-2.1/d211a8433a2b94f141523a95b4af825c/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
