@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, FlatList, ActivityIndicator, Share, RefreshCont
 import common_styles, { style_objects } from '../../common/styles/common_styles';
 import { Icon } from 'react-native-elements';
 import { DrawerActions } from 'react-navigation-drawer';
-import { TouchableNativeFeedback, TouchableOpacity } from 'react-native-gesture-handler';
+import {  TouchableOpacity } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-community/async-storage';
 import Button from '../../common/components/button';
 export default class MySubjects extends React.Component {
@@ -37,9 +37,9 @@ export default class MySubjects extends React.Component {
         return {
             title: 'الصفحة الرئيسية',
             headerRight: () => (
-                <TouchableNativeFeedback containerStyle={{ marginRight: 20 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                <TouchableOpacity containerStyle={{ marginRight: 20 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                     <Icon name='menu' containerStyle={{}} size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
-                </TouchableNativeFeedback>
+                </TouchableOpacity>
             ),
         };
     };

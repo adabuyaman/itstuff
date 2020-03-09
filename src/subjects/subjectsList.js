@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, FlatList, ActivityIndicator, TextInput, TouchableNativeFeedback, TouchableOpacity, Alert } from 'react-native';
+import { StyleSheet, View, Text, FlatList, ActivityIndicator, TextInput, TouchableOpacity, Alert } from 'react-native';
 import common_styles, { style_objects } from '../../common/styles/common_styles';
 import SubjectItem from './components/subject_component';
 import { Icon } from 'react-native-elements';

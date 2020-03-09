@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableNativeFeedback, } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, } from 'react-native';
 import { Icon } from 'react-native-elements';
 import common_styles from '../../../common/styles/common_styles';
 
@@ -7,7 +7,7 @@ import common_styles from '../../../common/styles/common_styles';
 const SubjectItem = (props) => {
   const { pk, name, major } = props;
     return (
-      <TouchableNativeFeedback onPress={() => props.navigation.navigate('subject_detail', {
+      <TouchableOpacity onPress={() => props.navigation.navigate('subject_detail', {
         subject_id: pk
       })}>
         <View style={styles.item_container}>
@@ -22,7 +22,7 @@ const SubjectItem = (props) => {
             <Icon color='#21303f' name='left' size={17} type='antdesign' />
           </View>
         </View>
-      </TouchableNativeFeedback>
+      </TouchableOpacity>
     );
 };
 

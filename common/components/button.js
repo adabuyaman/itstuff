@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableNativeFeedback } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Icon } from 'react-native-elements';
 import common_styles from '../styles/common_styles';
 
 const Button = (props) => {
-    const { label, color, onPress, icon, iconType,containerStyle } = props;
+    const { label, color, onPress, icon, iconType, containerStyle } = props;
     const styles = StyleSheet.create({
         button_container: {
             backgroundColor: color ? color : common_styles.colors.main_color,
@@ -20,21 +20,24 @@ const Button = (props) => {
             color: common_styles.colors.main_light_color,
             textTransform: 'capitalize'
         },
-        icon_container_style:{
+        icon_container_style: {
             marginLeft: label == '' || label == undefined ? 0 : 4
         }
     })
 
     return (
-        <TouchableNativeFeedback onPress={onPress}>
-            <View style={styles.button_container}>
+        <View style={styles.button_container}>
+            <TouchableOpacity onPress={onPress} style={{
+                flexDirection: 'row',
+            }}>
                 <Text style={styles.label}>{label}</Text>
                 {
                     icon &&
-                    <Icon containerStyle={styles.icon_container_style} name={icon} size={18} type={iconType?iconType:'antdesign'} color={common_styles.colors.main_light_color} />
+                    <Icon containerStyle={styles.icon_container_style} name={icon} size={18} type={iconType ? iconType : 'antdesign'} color={common_styles.colors.main_light_color} />
                 }
-            </View>
-        </TouchableNativeFeedback>
+            </TouchableOpacity>
+        </View>
+
     )
 }
 

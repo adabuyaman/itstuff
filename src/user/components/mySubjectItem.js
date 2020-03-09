@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableNativeFeedback, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Icon } from 'react-native-elements';
 import common_styles from '../../../common/styles/common_styles';
 
@@ -13,7 +13,7 @@ export default class MySubjectItem extends React.Component {
   render() {
     const { pk, name, major, level } = this.props;
     return (
-      <TouchableNativeFeedback onPress={() => {this.props.navigation.navigate('subject_detail', {
+      <TouchableOpacity onPress={() => {this.props.navigation.navigate('subject_detail', {
         subject_id: pk
       });
       this.props.hide();
@@ -32,7 +32,7 @@ export default class MySubjectItem extends React.Component {
             <Icon color='#21303f' name='left' size={17} type='antdesign' />
           </View>
         </View>
-      </TouchableNativeFeedback>
+      </TouchableOpacity>
     );
   }
 };

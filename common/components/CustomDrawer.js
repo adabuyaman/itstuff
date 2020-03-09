@@ -10,11 +10,9 @@ import {
 import common_styles, { style_objects } from '../styles/common_styles';
 import { DrawerItems } from 'react-navigation-drawer';
 import { SafeAreaView } from 'react-navigation';
-import { TouchableNativeFeedback } from 'react-native-gesture-handler';
 
 export default class CustomDrawer extends React.Component {
     render() {
-        const ripple = TouchableNativeFeedback.Ripple(common_styles.colors.main_color, false);
         return (
             <ScrollView contentContainerStyle={styles.main_container}>
                 <SafeAreaView forceInset={{ top: 'always', horizontal: 'never', }} style={{ flex: 1 }}>

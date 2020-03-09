@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableNativeFeedback, Linking, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Linking, TouchableOpacity } from 'react-native';
 import common_styles from '../../../common/styles/common_styles';
 import { Icon } from 'react-native-elements';
 
@@ -8,7 +8,6 @@ const Article = (props) => {
     return (
         <View style={{ borderRadius: 5, overflow: 'hidden' }}>
             <TouchableOpacity
-                background={TouchableNativeFeedback.Ripple(common_styles.colors.main_back_color_d1)}
                 onPress={() => Linking.openURL(link)}>
                 <View style={styles.main_container}>
                     <View style={styles.info_container}>

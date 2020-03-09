@@ -5,7 +5,6 @@ import {
   View,
   TextInput,
   Picker,
-  TouchableNativeFeedback,
   TouchableOpacity
 } from 'react-native';
 import common_styles, { style_objects } from '../../common/styles/common_styles';
@@ -113,14 +112,14 @@ export default class Profile extends React.Component {
             </Picker>
             <Icon color={common_styles.colors.main_light_color} containerStyle={styles.field_icon_container} name='book' type='antdesign' />
           </View>
-          {/* <TouchableNativeFeedback onPress={() => this.refs.mysubjects.show(this.state.subjects)}>
+          {/* <TouchableOpacity onPress={() => this.refs.mysubjects.show(this.state.subjects)}>
             <View style={styles.subjects_header}>
               <View>
                 <Icon name='table' color={common_styles.colors.main_light_color} type='antdesign' containerStyle={{ padding: 10, marginBottom: 5, backgroundColor: common_styles.colors.main_back_color, borderRadius: 50 }} />
               </View>
               <Text style={{ color: common_styles.colors.main_light_color }}>جدولك الدراسي</Text>
             </View>
-          </TouchableNativeFeedback> */}
+          </TouchableOpacity> */}
         </View>
         <Button label='حفظ' icon='save' onPress={this.saveUserInfo} />
         <MySubjectsModal forceUpdate={this._forceUpdate} {...this.props} ref='mysubjects' />
@@ -184,7 +183,7 @@ const styles = StyleSheet.create({
 //   View,
 //   TextInput,
 //   Picker,
-//   TouchableNativeFeedback,
+//   
 //   TouchableOpacity
 // } from 'react-native';
 // import common_styles, { style_objects } from '../../common/styles/common_styles';
@@ -292,7 +291,7 @@ const styles = StyleSheet.create({
 //             </Picker>
 //             <Icon color={common_styles.colors.main_light_color} containerStyle={styles.field_icon_container} name='book' type='antdesign' />
 //           </View>
-//           <TouchableNativeFeedback onPress={() => this.refs.mysubjects.show(this.state.subjects)}>
+//           <TouchableOpacity onPress={() => this.refs.mysubjects.show(this.state.subjects)}>
 //             <View style={styles.subjects_header}>
 //               <View>
 //                 {/* <View style={{ position: 'absolute', zIndex: 2, top: -10, left: -10, paddingVertical: 4, paddingHorizontal: 6, borderRadius: 20, backgroundColor: '#27ae60', justifyContent: 'center', alignItems: 'center' }}>
@@ -302,7 +301,7 @@ const styles = StyleSheet.create({
 //               </View>
 //               <Text style={{ color: common_styles.colors.main_light_color }}>جدولك الدراسي</Text>
 //             </View>
-//           </TouchableNativeFeedback>
+//           </TouchableOpacity>
 //         </View>
 //         <Button label='حفظ' icon='save' onPress={this.saveUserInfo} />
 //         <MySubjectsModal forceUpdate={this._forceUpdate} {...this.props} ref='mysubjects' />

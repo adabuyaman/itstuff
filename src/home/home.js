@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, FlatList, ActivityIndicator, RefreshControl } f
 import common_styles, { style_objects } from '../../common/styles/common_styles';
 import { Icon } from 'react-native-elements';
 import { DrawerActions } from 'react-navigation-drawer';
-import { TouchableNativeFeedback, TouchableOpacity } from 'react-native-gesture-handler';
+import {  TouchableOpacity } from 'react-native-gesture-handler';
 import LinearGradient from 'react-native-linear-gradient';
 import SectionButton from './components/sectionButton';
 import Article from './components/article';
@@ -39,9 +39,9 @@ export default class Home extends React.Component {
         return {
             title: 'الصفحة الرئيسية',
             headerRight: () => (
-                <TouchableNativeFeedback containerStyle={{ marginRight: 20 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                <TouchableOpacity containerStyle={{ marginRight: 20 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                     <Icon name='menu' containerStyle={{}} size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
-                </TouchableNativeFeedback>
+                </TouchableOpacity>
             ),
         };
     };
@@ -49,7 +49,6 @@ export default class Home extends React.Component {
     render() {
         return (
             <View style={{ flex: 1 }}>
-
                 <View style={style_objects.headerBar}>
                     <Icon name='menu' size={22} containerStyle={{ opacity: 0, paddingHorizontal: 20 }} />
                     <Text style={{ color: '#fff' }}>الصفحة الرئيسية</Text>

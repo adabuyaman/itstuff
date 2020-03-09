@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableNativeFeedback } from 'react-native';
+import { View, Text, StyleSheet,TouchableOpacity } from 'react-native';
 import common_styles from '../../../common/styles/common_styles';
 import { Icon } from 'react-native-elements';
 
@@ -7,8 +7,7 @@ const SectionButton = (props) => {
     const { label, icon, iconType, color, screen, navigation } = props
     return (
         <View style={{ borderRadius: 5, overflow: 'hidden' }}>
-            <TouchableNativeFeedback
-                background={TouchableNativeFeedback.Ripple(common_styles.colors.main_color)}
+            <TouchableOpacity
                 onPress={() => navigation.navigate(screen)}>
                 <View style={styles.main_container}>
                     <Icon
@@ -20,7 +19,7 @@ const SectionButton = (props) => {
                     />
                     <Text style={styles.title}>{label}</Text>
                 </View>
-            </TouchableNativeFeedback>
+            </TouchableOpacity>
         </View>
     )
 }

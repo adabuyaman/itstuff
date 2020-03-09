@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableNativeFeedback, TouchableOpacity, Linking, Share } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Linking, Share } from 'react-native';
 import { Icon } from 'react-native-elements';
 import common_styles from '../../../common/styles/common_styles';
 
@@ -27,7 +27,7 @@ const TestbankFile = (props) => {
     }
   };
   return (
-    <TouchableNativeFeedback onPress={() => Linking.openURL(object.link)}>
+    <TouchableOpacity onPress={() => Linking.openURL(object.link)}>
       <View style={styles.item_container}>
         <View style={styles.info_container}>
           <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', flex: 1 }}>
@@ -46,7 +46,7 @@ const TestbankFile = (props) => {
           </TouchableOpacity>
         </View>
       </View>
-    </TouchableNativeFeedback>
+    </TouchableOpacity>
   )
 }
 
@@ -74,7 +74,7 @@ const NotebookFile = (props) => {
     }
   };
   return (
-    <TouchableNativeFeedback onPress={() => Linking.openURL(object.link)}>
+    <TouchableOpacity onPress={() => Linking.openURL(object.link)}>
       <View style={styles.item_container}>
         <View style={styles.info_container}>
           <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', flex: 1 }}>
@@ -92,7 +92,7 @@ const NotebookFile = (props) => {
           </TouchableOpacity>
         </View>
       </View>
-    </TouchableNativeFeedback>
+    </TouchableOpacity>
   )
 }
 

@@ -95,6 +95,7 @@ export default class ProfileModal extends React.Component {
                             icon='phone'
                             label='اتصل بي'
                             onPress={() => Linking.openURL(`tel:${this.state.user.phone}`)}
+                            containerStyle={{width:'85%',marginLeft:7}}
                         />
                     </View>
                     <View style={styles.info_container}>
