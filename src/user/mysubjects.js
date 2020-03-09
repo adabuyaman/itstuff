@@ -88,10 +88,10 @@ export default class MySubjectsModal extends React.Component {
                 style={{ ...style_objects.main_container }}
                 onClosed={() => this.props.forceUpdate()}
             >
-                <View style={styles.header_container}>
+                <SafeAreaView style={styles.header_container}>
                     <Icon reverse name='table' color={common_styles.colors.main_color} type='antdesign' containerStyle={{ marginBottom: 4 }} />
                     <Text style={styles.header_container_title}>جدول موادك الدراسية</Text>
-                </View>
+                </SafeAreaView>
                 <TouchableOpacity style={{ position: 'absolute', top: 20, right: 20, zIndex: 50 }} onPress={this.hide}>
                     <Icon name='close' containerStyle={{}} size={22} type='AntDesign' color={common_styles.colors.main_light_color} />
                 </TouchableOpacity>

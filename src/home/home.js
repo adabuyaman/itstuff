@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, FlatList, ActivityIndicator, RefreshControl } from 'react-native';
+import { StyleSheet, View, Text, FlatList, ActivityIndicator, SafeAreaView } from 'react-native';
 import common_styles, { style_objects } from '../../common/styles/common_styles';
 import { Icon } from 'react-native-elements';
 import { DrawerActions } from 'react-navigation-drawer';
@@ -48,7 +48,7 @@ export default class Home extends React.Component {
 
     render() {
         return (
-            <View style={{ flex: 1 }}>
+            <SafeAreaView style={{ flex: 1 }}>
                 <View style={style_objects.headerBar}>
                     <Icon name='menu' size={22} containerStyle={{ opacity: 0, paddingHorizontal: 20 }} />
                     <Text style={{ color: '#fff' }}>الصفحة الرئيسية</Text>
@@ -96,7 +96,7 @@ export default class Home extends React.Component {
                         }
                     </View>
                 </View>
-            </View>
+            </SafeAreaView>
         );
     }
 };

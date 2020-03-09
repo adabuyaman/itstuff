@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, FlatList, ActivityIndicator, TextInput, TouchableOpacity, Alert } from 'react-native';
+import { StyleSheet, View, Text, FlatList, ActivityIndicator, TextInput, TouchableOpacity, Alert,SafeAreaView } from 'react-native';
 import common_styles, { style_objects } from '../../common/styles/common_styles';
 import SubjectItem from './components/subject_component';
 import { Icon } from 'react-native-elements';
@@ -156,7 +156,8 @@ class SubjectsList extends React.Component {
     );
     if (this.state.loading == false)
       return (
-        <View style={styles.main_container}>
+      
+        <SafeAreaView style={styles.main_container}>
           <View style={styles.search_container}>
             {
               this.state.search_string.length > 0 ?
@@ -182,18 +183,18 @@ class SubjectsList extends React.Component {
             keyExtractor={(item) => item.pk.toString()}
             ListEmptyComponent={<No_result_found />}
           />
-        </View>
+        </SafeAreaView>
       );
     else {
       return (
-        <View style={{ flex: 1 }}>
+        <SafeAreaView style={{ flex: 1 }}>
           <View style={[styles.main_container, { justifyContent: 'center', alignContent: 'center' }]}>
             <ActivityIndicator
               size='large'
               color={common_styles.colors.main_secondary_color}
             />
           </View>
-        </View>
+        </SafeAreaView>
       );
     }
   }

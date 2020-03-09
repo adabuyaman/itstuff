@@ -5,7 +5,8 @@ import {
   View,
   TextInput,
   Picker,
-  TouchableOpacity
+  TouchableOpacity,
+  SafeAreaView
 } from 'react-native';
 import common_styles, { style_objects } from '../../common/styles/common_styles';
 import Button from '../../common/components/button';
@@ -81,7 +82,7 @@ export default class Profile extends React.Component {
 
   render() {
     return (
-      <View style={styles.main_container}>
+      <SafeAreaView style={styles.main_container}>
         <TouchableOpacity style={{ position: 'absolute', top: 0, right: 0, padding: 20 }} onPress={() => this.props.navigation.dispatch(DrawerActions.openDrawer())}>
           <Icon name='menu' containerStyle={{}} size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
         </TouchableOpacity>
@@ -123,7 +124,7 @@ export default class Profile extends React.Component {
         </View>
         <Button label='حفظ' icon='save' onPress={this.saveUserInfo} />
         <MySubjectsModal forceUpdate={this._forceUpdate} {...this.props} ref='mysubjects' />
-      </View>
+      </SafeAreaView>
     );
   }
 };

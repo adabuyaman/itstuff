@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, Image, TouchableOpacity, RefreshControl, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, Image, TouchableOpacity, SafeAreaView, ScrollView } from 'react-native';
 import common_styles, { style_objects } from '../../common/styles/common_styles';
 import { Icon } from 'react-native-elements';
 import { DrawerActions } from 'react-navigation-drawer';
@@ -67,7 +67,7 @@ export default class contactus extends React.Component {
 
     render() {
         return (
-            <View style={{ flex: 1,backgroundColor:common_styles.colors.main_back_color }}>
+            <SafeAreaView style={{ flex: 1,backgroundColor:common_styles.colors.main_back_color }}>
                 <View style={style_objects.headerBar}>
                     <View style={{ opacity: 0 }}>
                         <TouchableOpacity onPress={() => 1} style={{ height: '100%', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 20 }}>
@@ -134,7 +134,7 @@ export default class contactus extends React.Component {
 
                     <ProfileModal ref='profileModal' />
                 </ScrollView>
-            </View>
+            </SafeAreaView>
 
         );
     }

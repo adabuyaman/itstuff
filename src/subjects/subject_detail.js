@@ -6,6 +6,7 @@ import {
   FlatList,
   Dimensions,
   ActivityIndicator,
+  SafeAreaView
 } from 'react-native';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 import { Icon } from 'react-native-elements';
@@ -136,7 +137,7 @@ class SubjectDetailView extends React.Component {
       );
 
       return (
-        <View style={styles.main_container}>
+        <SafeAreaView style={styles.main_container}>
           <View style={styles.subject_number_container}>
             {/* <TouchableOpacity containerStyle={{ zIndex: 2 }} onPress={() => this.toggleBookmark()}>
               <Icon reverse name={this.state.bookmarked ? 'bookmark' : 'bookmark-border'} containerStyle={{}} size={22} type='MaterialIcons' color={common_styles.colors.main_color} />
@@ -186,7 +187,7 @@ class SubjectDetailView extends React.Component {
               />
             </View>
           </View>
-        </View>
+        </SafeAreaView>
       );
     }
     else return (
