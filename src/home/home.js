@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, FlatList, ActivityIndicator, SafeAreaView } fro
 import common_styles, { style_objects } from '../../common/styles/common_styles';
 import { Icon } from 'react-native-elements';
 import { DrawerActions } from 'react-navigation-drawer';
-import {  TouchableOpacity } from 'react-native-gesture-handler';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import LinearGradient from 'react-native-linear-gradient';
 import SectionButton from './components/sectionButton';
 import Article from './components/article';
@@ -13,23 +13,24 @@ export default class Home extends React.Component {
         super(props);
         this.state = {
             articles: [],
+            weather: [],
             loading: false,
             refresher: -1
         };
     }
 
     async componentDidMount() {
-        this.setState({ loading: true })
         await this.importArticles();
-        this.setState({ loading: false })
+        this.setState({ loading: true })
     }
 
     async importArticles() {
         try {
             let response = await fetch(links.ArticlesApi);
+            let w = await fetch(links.weatherAPI);
             let articles = await response.json();
-            //console.log('ask ask,', articles);
             this.setState({ articles });
+            this.setState({ weather: await w.json() });
         } catch (error) {
             console.error(error);
         }
@@ -50,8 +51,16 @@ export default class Home extends React.Component {
         return (
             <SafeAreaView style={{ flex: 1 }}>
                 <View style={style_objects.headerBar}>
+                    {
+                        this.state.loading ?
+                            <View style={{marginLeft:10,flexDirection:'row-reverse'}}>
+                                <Text style={{ color: '#fff' ,marginLeft:2}}>{Math.round(this.state.weather.main.temp - 273.15)}°</Text>
+                                <Icon name='sun' size={22} type='feather' color={common_styles.colors.main_light_color} />
+                            </View>
+                            : <Text></Text>
+                    }
                     <Icon name='menu' size={22} containerStyle={{ opacity: 0, paddingHorizontal: 20 }} />
-                    <Text style={{ color: '#fff' }}>الصفحة الرئيسية</Text>
+                    <Text style={{ color: '#fff' ,marginLeft:-100}}>الصفحة الرئيسية</Text>
                     <View style={{}}>
                         <TouchableOpacity onPress={() => this.props.navigation.dispatch(DrawerActions.openDrawer())} style={{ height: '100%', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 20 }}>
                             <Icon name='menu' size={22} type='MaterialCommunityIcons' color={common_styles.colors.main_light_color} />
@@ -62,10 +71,6 @@ export default class Home extends React.Component {
                     <View style={{ flex: 1, }}>
                         {
                             this.state.loading ?
-                                <View style={{ justifyContent: 'center', alignItems: 'center', flex: 1 }}>
-                                    <ActivityIndicator size='large' color={common_styles.colors.main_secondary_color} />
-                                </View>
-                                :
                                 <FlatList
                                     ListHeaderComponent={() => (
                                         <View>
@@ -93,6 +98,10 @@ export default class Home extends React.Component {
                                     )}
                                     keyExtractor={(item, index) => index.toString()}
                                 />
+                                :
+                                <View style={{ justifyContent: 'center', alignItems: 'center', flex: 1 }}>
+                                    <ActivityIndicator size='large' color={common_styles.colors.main_secondary_color} />
+                                </View>
                         }
                     </View>
                 </View>
@@ -106,7 +115,7 @@ const styles = StyleSheet.create({
         ...style_objects.main_container,
     },
     linearGradient: {
-        opacity:0.75,
+        opacity: 0.75,
         overflow: 'hidden',
         position: 'absolute',
         bottom: -50,
